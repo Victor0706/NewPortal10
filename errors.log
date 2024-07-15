@@ -1,0 +1,2 @@
+2024-07-15 20:33:30,702 INFO Watching for file changes with StatReloader C:\Users\USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py None
+2024-07-15 20:36:01,789 INFO C:\Users\USER\PycharmProjects\pythonProject4\project\project\project\settings.py changed, reloading. C:\Users\USER\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\autoreload.py None

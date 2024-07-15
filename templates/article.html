@@ -1,0 +1,36 @@
+{% extends 'flatpages/default.html' %}
+
+{% load my_filters %}
+
+{% block title %}
+Article
+{% endblock title %}
+
+{% block content %}
+   <h1>{{ article.title|censor1 }}</h1>
+   <h3>{{ time_now|date:'M d Y' }}</h3>
+
+   <hr>
+   {% if article %}
+       <table>
+           <tr>
+               <td>Название</td>
+               <td>Текст</td>
+               <td>Рейтинг</td>
+               <td>Автор</td>
+               <td>Категория</td>
+           </tr>
+
+           <tr>
+               <td>{{ article.title|censor1 }}</td>
+               <td>{{ article.text|censor2 }}</td>
+               <td>{{ article.rating }}</td>
+               <td>{{ article.author }}</td>
+               <td>{{ article.category_type }}</td>
+           </tr>
+
+       </table>
+   {% else %}
+       <h2>Статей нет!</h2>
+   {% endif %}
+{% endblock content %}
